@@ -48,9 +48,6 @@
 
           {%- if theme.post_meta.created_at %}
             <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
               <span class="post-meta-item-text">{{ __('post.posted') }}</span>
 
               {%- if not date_diff and time_diff and theme.post_meta.updated_at.enable and theme.post_meta.updated_at.another_day %}

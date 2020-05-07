@@ -23,7 +23,6 @@
     {### PAGE BLOCK ###}
     {##################}
     <div class="post-block" lang="{{ page.lang or config.language }}">
-      {% include '_partials/page/page-header.swig' %}
       {#################}
       {### PAGE BODY ###}
       {#################}
@@ -73,5 +72,5 @@
 {% endblock %}
 
 {% block sidebar %}
-  {{ sidebar_template.render(true) }}
+  {{ sidebar_template.render(false) }}
 {% endblock %}
